@@ -1,23 +1,129 @@
-
+* {
+    margin: 0%;
+    padding: 0%;
+    box-sizing: border-box;
+}
 header {
     display: flex;
     justify-content: center;
     align-items: center;
     background-color: #1a1a1a;
-}
-.container {
-    filter: drop-shadow(0px 0px 10px black);
-    width: 90vw;
-    height: 100vh;
     overflow: hidden;
 }
 .carrossel {
     display: flex;
-    transition: 1s ease-in-out;
+    transition: 3s ease-in-out;
     transform: translateX(0);
-    width: 90vw;
+    width: 100vw;
 }
-img {
-    min-width: 91vw;
+.carrossel img {
+    min-width: 100vw;
     max-height: 500px;
+}
+body {
+    background-color: #1a1a1a;
+    display: flex;
+    flex-wrap: wrap;
+}
+
+h1 {
+    text-align: center;
+    color: white;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 90px;
+    background-color: black;
+    border-radius: 30px;
+    padding: 20px;
+    width: 100vw;
+}
+#box {
+    transform-origin: center center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main .koch {
+    min-width: 25vw;
+    min-height: 25vh;
+    border-radius: 30px;
+    object-fit: cover;
+    opacity: 0.9;
+    cursor: move;
+}
+.explicacao {
+    color: white;
+    background-color: black;
+    border-radius: 30px;
+    padding: 10px;
+    width: 100vw;
+}
+.feitos {
+    background-color: gray;
+    padding: 30px;
+    border-radius: 30px;
+    width: 40vw;
+    transition: 1s ease-in-out;
+}
+.feitos:hover {
+   background-color: white;
+   color: black;
+}
+ol {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+    color: white;
+    font-weight: bold;
+}
+h2 {
+    background-color: white;
+    padding: 20px;
+    border-radius: 30px;
+    text-align: center;
+   transition: 1s ease;
+
+}
+h2:hover {
+   border-radius: 0%;
+}
+footer {
+    width: 100vw;
+    height: 35vh;
+    background-color: rgb(202, 202, 202);
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    overflow-x: hidden;
+}
+.text_footer {
+    width: 50%;
+}
+nav {
+    min-height: 100%;
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 18px;
+    flex-wrap: wrap;
+}
+a {
+    text-decoration: none;
+    color: rgb(82, 82, 82);
+    font-weight: bold;
+    transition: 1s ease;
+    background-color: black;
+    padding: 9px;
+    border-radius: 30px;
+    width: 60%;
+}
+a:hover {
+    color: black;
+    background-color: gray;
+}
+nav p {
+    font-weight: bold;
 }
